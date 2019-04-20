@@ -5,7 +5,7 @@ var basicFun = {
         
         var strList = '目前工蜂数量:' // 拼接字符串
         for (var i in workerList) {
-            strList += ' ' + workerList[i].type + ': ' + workerList[i].val.length
+            strList += ' ' + workerList[i].type + ': ' + workerList[i].nowList.length
         }
 
         console.log(strList) // 输出信息

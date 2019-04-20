@@ -6,7 +6,7 @@ var workUpgrader = {
             // if (creep.harvest(sources[1]) == ERR_NOT_IN_RANGE) { // 采矿操作,如果离资源较远的话就朝资源方向移动
             //     creep.moveTo(sources[1])
             // }   
-            if (creep.withdraw(MotherBase, RESOURCE_ENERGY, 20) == ERR_NOT_IN_RANGE) { // 从母基地获取资源
+            if (creep.withdraw(MotherBase, RESOURCE_ENERGY, 40) == ERR_NOT_IN_RANGE) { // 从母基地获取资源
                 creep.moveTo(MotherBase)
             }
         } else {
