@@ -7,7 +7,6 @@ var basicFun = {
         for (var i in workerList) {
             strList += ' ' + workerList[i].type + ': ' + workerList[i].nowList.length
         }
-
         console.log(strList) // 输出信息
     }
 }
