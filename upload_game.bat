@@ -1,1 +1,1 @@
-start grunt screeps
+grunt screeps
