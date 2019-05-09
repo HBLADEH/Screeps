@@ -1,6 +1,6 @@
 // 挖矿工蜂 (2矿使用的模型)
 var workMiner2 = {
-    run(creep, toRoom, sources, containers) {
+    run(creep, toRoom, sources, container) {
 
         if (creep.room.name != toRoom.name) { // 工蜂当前的房间是否是指定的房间
             var room_position = new RoomPosition(source.x, source.y, toRoom.name)
@@ -20,7 +20,7 @@ var workMiner2 = {
                         visualizePathStyle: {
                             stroke: '#ffaa00'
                         },
-                        reusePath: 50, // 重复路径
+                        reusePath: 10, // 重复路径
                     })
                 }
             } else {
@@ -29,9 +29,9 @@ var workMiner2 = {
                 //         return (structure.structureType == STRUCTURE_CONTAINER)
                 //     }
                 // })
-                if (containers.length > 0) {
-                    if (creep.transfer(containers[0], RESOURCE_ENERGY) == ERR_NOT_IN_RANGE) { // 存矿
-                        creep.moveTo(containers[0], {
+                if (container) {
+                    if (creep.transfer(container, RESOURCE_ENERGY) == ERR_NOT_IN_RANGE) { // 存矿
+                        creep.moveTo(container, {
                             visualizePathStyle: {
                                 stroke: '#ffffff'
                             },

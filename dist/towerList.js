@@ -1,6 +1,7 @@
 var towerList = {
     run(towers) {
         for (var i in towers) {
+            // console.log(towers[i].tower)
             var tower = towers[i].tower
             if (tower) { // 如果该塔存在
                 const closestHostileCreeps = tower.pos.findClosestByRange(FIND_HOSTILE_CREEPS) // 寻找敌对工蜂
